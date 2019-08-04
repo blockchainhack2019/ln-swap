@@ -43,7 +43,7 @@ bin/lnd \
 bin/lncli --network=testnet create
 ```
 
-4. Copy credentials and certificate
+5. Copy credentials and certificate
 
 ```bash
 mkdir data
@@ -58,7 +58,7 @@ cp $LND_HOME/tls.cert ./data/
 cp $LND_HOME/data/chain/bitcoin/testnet/admin.macaroon ./data/
 ```
 
-5. Copy `rpc.proto` from latest sources
+6. Copy `rpc.proto` from latest sources
 
 ```bash
 wget https://github.com/lightningnetwork/lnd/blob/master/lnrpc/rpc.proto
@@ -71,11 +71,11 @@ mv rpc.proto ./data/
 // import "google/api/annotations.proto";
 ```
 
-6. Wait until `lnd` synces
+7. Wait until `lnd` synces
 
 ## Running
 
-7. Run nodejs script to operate your `lnd` node.
+8. Run nodejs script to operate your `lnd` node.
 
 ```bash
 node lnd.js
@@ -83,13 +83,13 @@ node lnd.js
 
 **IN DEVELOPMENT:**
 
-8. Create invoice
+9. Create invoice
 
 ```bash
 node create-invoice.js
 ```
 
-9. Send QTUM
+10. Send QTUM
 
 ```bash
 node send-qtum.js
